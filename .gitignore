@@ -74,5 +74,26 @@ Plugins/**/Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 
-# Unreal – logs
-**/Saved/Logs/*.log
+# Unreal – sorties régénérables (binaires, cache de build, packaging)
+# Ne couvre pas Content/, Config/*.ini à la racine du projet, ni le code Source/.
+# Les motifs sans **/ ci-dessus ne s’appliquent qu’à la racine du dépôt.
+**/Binaries/
+**/Intermediate/
+**/DerivedDataCache/
+**/Build/*
+!**/Build/*/
+**/Build/*/**
+!**/Build/*/PakBlacklist*.txt
+!**/Build/**/*.ico
+
+# Unreal – uniquement sous-dossiers « jetables » de Saved (pas tout Saved/)
+# Config partagée : <Projet>/Config/*.ini — pas Saved/Config/ (réglages machine / éditeur).
+**/Saved/Logs/
+**/Saved/webcache_*/
+**/Saved/Autosaves/
+**/Saved/Config/
+**/Saved/CrashReportClient/
+**/Saved/Crashes/
+**/Saved/ShaderDebugInfo/
+**/Saved/SourceControl/
+**/Saved/AutoScreenshot.png
