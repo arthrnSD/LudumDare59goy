@@ -4,7 +4,7 @@ First version of a small horror game named "Shingō" made for **Ludum Dare Game 
 
 ## Authors
 
-- [@victorrchb](https://github.com/obsg13)
+- [@obsg13](https://github.com/obsg13)
 - [@april211k](https://github.com/april211k)
 - [@arthrnSD](https://github.com/arthrnSD)
 - [@crypp](https://instagram.com/crypp.vision)
