@@ -107,7 +107,7 @@ def _pr_asset_warnings(base: str, head: str) -> int:
             )
             warnings += 1
     if warnings == 0 and names:
-        print("Aucun gros binaire Unreal (>= seuil) dans le diff, ou pas de binaires listes.")
+        print("Aucun gros binaire Unreal (>= seuil) dans le diff, ou pas de binaires concernes.")
     return warnings
 
 
